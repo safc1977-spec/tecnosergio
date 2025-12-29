@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- LOGIN -->
+<div id="login" class="pantalla">
+    <h2>Iniciar Sesión</h2>
+    <input type="text" id="usuario" placeholder="Usuario">
+    <input type="password" id="clave" placeholder="Contraseña">
+    <button onclick="login()">Ingresar</button>
+</div>
+
+<!-- MENÚ PRINCIPAL -->
+<div id="menu" class="pantalla oculto">
+    <h2>Mi Billetera</h2>
+    <p>Saldo disponible: <strong>$100.000</strong></p>
+
+    <button onclick="verMovimientos()">Últimos movimientos</button>
+    <button onclick="logout()">Cerrar sesión</button>
+</div>
+
+<!-- MOVIMIENTOS -->
+<div id="movimientos" class="pantalla oculto">
+    <h2>Últimos Movimientos</h2>
+
+    <ul>
+        <li>+ $20.000 – Depósito</li>
+        <li>- $5.000 – Compra</li>
+        <li>- $10.000 – Transferencia</li>
+    </ul>
+
+    <button onclick="volverMenu()">Volver</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
